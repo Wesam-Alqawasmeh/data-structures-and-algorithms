@@ -26,3 +26,4 @@ To run your tests
 
 1. [Code challenge 01](./401-code-challenges/code-challenge01.md)
 
+2. [Code challenge 02](./401-code-challenges/code-challenge02.md)

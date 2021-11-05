@@ -29,3 +29,5 @@ To run your tests
 2. [Code challenge 02](./401-code-challenges/code-challenge02.md)
 
 3. [Code challenge 03](./401-code-challenges/code-challenge03.md)
+
+4. [Code challenge 05](./401-code-challenges/code-challenge05.md)

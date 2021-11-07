@@ -12,6 +12,7 @@ newLinkedList.insert('c');
 newLinkedList.insert('e');
 newLinkedList.insert('f');
 newLinkedList.insert('g');
+newLinkedList.toString();
 
 
 

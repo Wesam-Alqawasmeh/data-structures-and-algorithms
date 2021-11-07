@@ -22,8 +22,9 @@ describe("Linked list", () => {
     list.insert("a");
     list.insert("b");
     list.insert("c");
+    list.toString();
     
-    expect(list.returnedLinkedlList).toBe("{a} -> {b} -> {c} -> Null");
+    expect(list.returnedLinkedlList).toBe("{c} -> {b} -> {a} -> Null");
   });
 
   it("The head property will properly point to the first node in the linked list", () => {
@@ -31,7 +32,7 @@ describe("Linked list", () => {
     list.insert("One");
     list.insert("Two");
     
-    expect(list.head.value).toEqual("One");
+    expect(list.head.value).toEqual("Two");
   });
 
   it(" Will return true when finding a value within the linked list that exists", () => {
@@ -57,7 +58,8 @@ describe("Linked list", () => {
     list.insert("a");
     list.insert("b");
     list.insert("c");
+    list.toString();
     
-    expect(list.returnedLinkedlList).toBe("{a} -> {b} -> {c} -> Null");
+    expect(list.returnedLinkedlList).toBe("{c} -> {b} -> {a} -> Null");
   });
 });

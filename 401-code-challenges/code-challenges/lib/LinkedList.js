@@ -10,6 +10,41 @@ class LinkedList {
     this.returnedLinkedlList = ``;
   }
 
+  /////////////////////////////////////////////////////////////////////////////////////////////
+
+  kthFromEnd(k) {
+
+    try{
+      if (!this.head){
+        return null;
+      };
+  
+      let currentNode = this.head;
+      let nodeValuesArr = [];
+      while(currentNode.next){
+        nodeValuesArr.push(currentNode.value);
+        currentNode = currentNode.next;
+      };
+      nodeValuesArr.push(currentNode.value);
+  
+      if((k >= nodeValuesArr.length) || (k < 0)){
+        return null;
+      };
+  
+      for(let i = 0; i < nodeValuesArr.length; i++){
+        if ((nodeValuesArr.length - 1 - k) === i){
+          // console.log( nodeValuesArr[i]);
+          return nodeValuesArr[i];
+        }
+      };
+    }catch(e){
+      console.error(`error in returning kth from the end for the linked list`);
+    }
+
+  }
+
+  ////////////////////////////////////////////////////////////////////////////////////////////
+
   append(value) {
     try {
       const newNode = new Node(value);

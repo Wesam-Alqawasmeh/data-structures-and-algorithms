@@ -17,4 +17,4 @@ newLinkedList.toString();
 
 
 
-console.log(newLinkedList.returnedLinkedlList);
+console.log(newLinkedList.kthFromEnd(1));

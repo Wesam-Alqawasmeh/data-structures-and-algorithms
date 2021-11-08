@@ -130,4 +130,70 @@ describe("Linked list", () => {
 
     expect(list.returnedLinkedlList).toEqual('{1} -> {2} -> {3} -> Null')
   });
+
+  //////////////////////////////////////////// Challenge 07 testing //////////////////////////////////////
+
+  it('Where k is greater than the length of the linked list', () => {
+    let list = new LinkedList();
+
+    list.append('1');
+    list.append('2');
+    list.append('3');
+    list.append('4');
+
+    // the lenght of linked list is 3 (4 ithems)
+    let kthValue =  list.kthFromEnd(5);
+    expect(kthValue).toBeNull();
+  });
+
+  it('Where k and the length of the list are the same', () => {
+    let list = new LinkedList();
+
+    list.append('1');
+    list.append('2');
+    list.append('3');
+    list.append('4');
+
+    // the lenght of linked list is 3 (4 ithems)
+    let kthValue =  list.kthFromEnd(3);
+    expect(kthValue).toBe('1');
+  });
+
+  it('Where k is not a positive integer', () => {
+    let list = new LinkedList();
+
+    list.append('1');
+    list.append('2');
+    list.append('3');
+    list.append('4');
+
+    let kthValue =  list.kthFromEnd(-1);
+    expect(kthValue).toBeNull();
+  });
+
+  it('Where the linked list is of a size 1', () => {
+    let list = new LinkedList();
+
+    list.append('1');
+
+    let kthValue =  list.kthFromEnd(0);
+    expect(kthValue).toBe('1');
+
+    kthValue =  list.kthFromEnd(1);
+    expect(kthValue).toBeNull();
+  });
+
+  it('“Happy Path” where k is not at the end, but somewhere in the middle of the linked list', () => {
+    let list = new LinkedList();
+
+    list.append('1');
+    list.append('2');
+    list.append('3');
+    list.append('4');
+    list.append('5');
+
+    let kthValue =  list.kthFromEnd(2);
+    expect(kthValue).toBe('3');
+  });
+
 });

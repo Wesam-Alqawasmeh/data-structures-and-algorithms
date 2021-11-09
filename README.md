@@ -34,4 +34,6 @@ To run your tests
 
 5. [Code challenge 06](./401-code-challenges/code-challenge06.md)
 
-5. [Code challenge 07](./401-code-challenges/code-challenge07.md)
+6. [Code challenge 07](./401-code-challenges/code-challenge07.md)
+
+7. [Code challenge 08](./401-code-challenges/code-challenge08.md)

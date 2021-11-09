@@ -6,41 +6,94 @@ class LinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
-    this.valueExists = false;
+    this.valueueExists = false;
     this.returnedLinkedlList = ``;
   }
 
   /////////////////////////////////////////////////////////////////////////////////////////////
 
-  kthFromEnd(k) {
+  zipLists(a, b) {
+    let aNode = a.head;
+    let bNode = b.head;
 
-    try{
-      if (!this.head){
-        return null;
-      };
-  
-      let currentNode = this.head;
-      let nodeValuesArr = [];
-      while(currentNode.next){
-        nodeValuesArr.push(currentNode.value);
+    let currentNode = new Node(aNode.value);
+    this.head = currentNode;
+
+
+    while((currentNode && bNode) || (currentNode && aNode)){
+      if(bNode){
+        currentNode.next = new Node(bNode.value);
         currentNode = currentNode.next;
-      };
-      nodeValuesArr.push(currentNode.value);
-  
-      if((k >= nodeValuesArr.length) || (k < 0)){
-        return null;
-      };
-  
-      for(let i = 0; i < nodeValuesArr.length; i++){
-        if ((nodeValuesArr.length - 1 - k) === i){
-          // console.log( nodeValuesArr[i]);
-          return nodeValuesArr[i];
+        bNode = bNode.next;
+      }
+     
+      if(aNode){
+        aNode = aNode.next;
+        if(aNode){
+          currentNode.next = new Node(aNode.value);
+          currentNode = currentNode.next;
         }
-      };
-    }catch(e){
+      }
+    };
+    return this.head;
+
+    // let aNodeArr = [];
+    // let bNodeArr = [];
+    // while(aNode){
+    //   aNodeArr.push(aNode.value);
+    //   aNode = aNode.next;
+    // };
+
+    // while(bNode){
+    //   bNodeArr.push(bNode.value);
+    //   bNode = bNode.next;
+    // };
+
+    // let counter = 0;
+    // while((currentNode && counter < bNodeArr.length) || (currentNode && counter < aNodeArr.length)){
+    //   if (counter < bNodeArr.length){
+    //     currentNode.next = new Node(bNodeArr[counter]);
+    //     currentNode = currentNode.next;
+    //   }
+      
+    //   if(counter + 1 < aNodeArr.length){
+    //     currentNode.next = new Node(aNodeArr[counter + 1]);
+    //     currentNode = currentNode.next;
+    //   }
+    //   counter ++;
+    // }
+    
+  }
+
+  /////////////////////////////////////////////////////////////////////////////////////////////
+
+  kthFromEnd(k) {
+    try {
+      if (!this.head) {
+        return null;
+      }
+
+      let currentNode = this.head;
+      let nodevalueuesArr = [];
+      while (currentNode.next) {
+        nodevalueuesArr.push(currentNode.value);
+        currentNode = currentNode.next;
+      }
+      nodevalueuesArr.push(currentNode.value);
+
+      if (k >= nodevalueuesArr.length || k < 0) {
+        return null;
+      }
+
+      for (let i = 0; i < nodevalueuesArr.length; i++) {
+        if (nodevalueuesArr.length - 1 - k === i) {
+          // console.log( nodevalueuesArr[i]);
+          return nodevalueuesArr[i];
+        }
+      }
+    } catch (e) {
       console.error(`error in returning kth from the end for the linked list`);
     }
-
   }
 
   ////////////////////////////////////////////////////////////////////////////////////////////
@@ -162,7 +215,7 @@ class LinkedList {
 
       while (currentNode.next) {
         if (currentNode.value === value) {
-          this.valueExists = true;
+          this.valueueExists = true;
           break;
         }
         currentNode = currentNode.next;
@@ -170,10 +223,10 @@ class LinkedList {
 
       // to check the last node
       if (currentNode.value === value) {
-        this.valueExists = true;
+        this.valueueExists = true;
       }
 
-      return this.valueExists;
+      return this.valueueExists;
     } catch (e) {
       console.error("error in searching at the linked list");
     }

@@ -11,7 +11,7 @@ value of that node
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![ch06](../img/ch07.png)
+![ch06](../../img/ch07.png)
 
 ---
 

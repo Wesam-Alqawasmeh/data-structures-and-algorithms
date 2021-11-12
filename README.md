@@ -24,16 +24,18 @@ To run your tests
 
 **Contents**
 
-1. [Code challenge 01](./401-code-challenges/code-challenge01.md)
+1. [Code challenge 01](./401-code-challenges/cc_documentation/code-challenge01.md)
 
-2. [Code challenge 02](./401-code-challenges/code-challenge02.md)
+2. [Code challenge 02](./401-code-challenges/cc_documentation/code-challenge02.md)
 
-3. [Code challenge 03](./401-code-challenges/code-challenge03.md)
+3. [Code challenge 03](./401-code-challenges/cc_documentation/code-challenge03.md)
 
-4. [Code challenge 05](./401-code-challenges/code-challenge05.md)
+4. [Code challenge 05](./401-code-challenges/cc_documentation/code-challenge05.md)
 
-5. [Code challenge 06](./401-code-challenges/code-challenge06.md)
+5. [Code challenge 06](./401-code-challenges/cc_documentation/code-challenge06.md)
 
-6. [Code challenge 07](./401-code-challenges/code-challenge07.md)
+6. [Code challenge 07](./401-code-challenges/cc_documentation/code-challenge07.md)
 
-7. [Code challenge 08](./401-code-challenges/code-challenge08.md)
+7. [Code challenge 08](./401-code-challenges/cc_documentation/code-challenge08.md)
+
+8. [Code challenge 10](./401-code-challenges/cc_documentation/code-challenge10.md)

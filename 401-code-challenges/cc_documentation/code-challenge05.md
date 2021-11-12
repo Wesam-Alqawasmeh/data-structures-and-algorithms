@@ -29,4 +29,4 @@
 
 ## JS code and test files
 
-[Challenge 05](./code-challenges/)
+[Challenge 05](../code-challenges/)

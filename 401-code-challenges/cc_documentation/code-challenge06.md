@@ -13,7 +13,7 @@
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![ch06](../img/linked-list-insertions.png)
+![ch06](../../img/linked-list-insertions.png)
 
 ---
 

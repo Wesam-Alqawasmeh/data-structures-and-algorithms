@@ -1,6 +1,6 @@
 "use srtict";
 
-const LinkedList = require("../lib/LinkedList");
+const LinkedList = require("../linked_list/LinkedList");
 
 describe("Linked list", () => {
   //////////////////////////////////////////// Challenge 05 testing //////////////////////////////////////

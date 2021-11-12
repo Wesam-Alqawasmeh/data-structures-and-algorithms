@@ -7,7 +7,7 @@
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-<img src="../img/array-binary-search.jpg" alt="challenge 03 whiteboard">
+<img src="../../img/array-binary-search.jpg" alt="challenge 03 whiteboard">
 
 
 ---

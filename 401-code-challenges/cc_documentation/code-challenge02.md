@@ -7,7 +7,7 @@ Write a function called insertShiftArray which takes in an array and a value to 
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-<img src="../img/array-insert-shift.jpg" alt="challenge 01 whiteboard">
+<img src="../../img/array-insert-shift.jpg" alt="challenge 01 whiteboard">
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->

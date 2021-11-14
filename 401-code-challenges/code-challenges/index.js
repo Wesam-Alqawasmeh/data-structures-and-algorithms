@@ -1,12 +1,23 @@
-'use strict';
+"use strict";
 
-const LinkedList = require('./linked_list/LinkedList');
+// // const LinkedList = require('./linked_list/LinkedList');
+// const PseudoQueue = require("./Stack&Queue/PseudoQueue");
 
+// // const newLinkedList = new LinkedList();
 
-const newLinkedList = new LinkedList();
+// const newPseudoQueue = new PseudoQueue();
 
+// newPseudoQueue.enqueue(1);
+// newPseudoQueue.enqueue(2);
+// newPseudoQueue.enqueue(3);
 
-console.log(newLinkedList.toString());
+// console.log(newPseudoQueue);
+// console.log(newPseudoQueue.dequeue());
+// console.log(newPseudoQueue.dequeue());
+// console.log(newPseudoQueue);
+// console.log(newPseudoQueue.dequeue());
+// console.log(newPseudoQueue.dequeue());
+// console.log(newPseudoQueue);
 
 // newLinkedList.append('a');
 // newLinkedList.append('b');

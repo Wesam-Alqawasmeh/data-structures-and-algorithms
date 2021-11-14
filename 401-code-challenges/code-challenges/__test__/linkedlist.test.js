@@ -265,7 +265,7 @@ describe("Linked list", () => {
           value: 2,
           next: {
             value: 3,
-            next: null
+            next: null,
           },
         },
       },

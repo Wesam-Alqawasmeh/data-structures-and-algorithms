@@ -1,7 +1,8 @@
 # Challenge Summary
+
 <!-- Description of the challenge -->
 
-- I have to write 3 new methods to the previos LinkedList class that I have created in challenge 05: 
+- I have to write 3 new methods to the previos LinkedList class that I have created in challenge 05:
 
 1. append: to add a new node at the end of the list.
 
@@ -12,12 +13,15 @@
 ---
 
 ## Whiteboard Process
+
 <!-- Embedded whiteboard image -->
+
 ![ch06](../../img/linked-list-insertions.png)
 
 ---
 
 ## Approach & Efficiency
+
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 append => O(1)
@@ -26,10 +30,10 @@ insert before => O(n)
 
 insert after => O(n)
 
-
 ---
 
 ## Solution
+
 <!-- Show how to run your code, and examples of it in action -->
 
-[click to see the code](./code-challenges/)
+[click to see the code](../code-challenges/)

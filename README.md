@@ -41,3 +41,5 @@ To run your tests
 8. [Code challenge 10](./401-code-challenges/cc_documentation/code-challenge10.md)
 
 9. [Code challenge 11](./401-code-challenges/cc_documentation/code-challenge11.md)
+
+10. [Code challenge 12](./401-code-challenges/cc_documentation/code-challenge12.md)

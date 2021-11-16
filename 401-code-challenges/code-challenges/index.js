@@ -1,5 +1,16 @@
 "use strict";
 
+const validateBrackets = require("./Stack&Queue/brackets");
+
+console.log(validateBrackets("{}"));
+console.log(validateBrackets("{}(){}"));
+console.log(validateBrackets("()[[Extra Characters]]"));
+console.log(validateBrackets("(){}[[]]"));
+console.log(validateBrackets("{}{Code}[Fellows](())"));
+console.log(validateBrackets("[({}]"));
+console.log(validateBrackets("(]("));
+console.log(validateBrackets("{(})"));
+
 // // const LinkedList = require('./linked_list/LinkedList');
 // const PseudoQueue = require("./Stack&Queue/PseudoQueue");
 

@@ -4,6 +4,24 @@ const BinaryTree = require("../trees/BinaryTree");
 const Node = require("../trees/Node");
 
 describe("Binary Tree Testing", () => {
+  test("if it will return the maximum value in the tree", () => {
+    let newBinaryTree = new BinaryTree();
+
+    newBinaryTree.root = new Node(
+      10,
+      new Node(5, new Node(3), new Node(6)),
+      new Node(15, new Node(14), new Node(18))
+    );
+
+    expect(newBinaryTree.maximumValue()).toEqual(18);
+  });
+
+  test("if it will return null for empty tree", () => {
+    let newBinaryTree = new BinaryTree();
+
+    expect(newBinaryTree.maximumValue()).toBeNull();
+  });
+
   test("Can successfully instantiate an empty tree", () => {
     let newBinaryTree = new BinaryTree();
 

@@ -7,6 +7,35 @@ class BinaryTree {
     this.root = root;
   }
 
+  /* this function will traverse the whole tree and in each iteration will check
+  if the current node value is bigger than the maximum value or not */
+  maximumValue() {
+    if (!this.root) {
+      return null;
+    }
+
+    let maximumValue = 0;
+
+    const _walk = (node) => {
+      if (node.value > maximumValue) {
+        maximumValue = node.value;
+      }
+
+      // check left
+      if (node.leftChild) {
+        _walk(node.leftChild);
+      }
+      // check right
+      if (node.rightChild) {
+        _walk(node.rightChild);
+      }
+    };
+
+    _walk(this.root);
+
+    return maximumValue;
+  }
+
   // Depth First Traversal
   // in depth first traversal, we have 3 methods of traversing the Graph
   // Pre-Order: Read -> Left -> Right

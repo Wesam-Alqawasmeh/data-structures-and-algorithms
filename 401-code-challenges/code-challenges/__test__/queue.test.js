@@ -61,6 +61,6 @@ describe("Queue test", () => {
   it("Calling dequeue or peek on empty queue raises exception", () => {
     let queue = new Queue();
     expect(queue.dequeue()).not.toBeDefined();
-    expect(queue.peek()).not.toBeDefined();
+    expect(queue.peek()).toBeNull();
   });
 });

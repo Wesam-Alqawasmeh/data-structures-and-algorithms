@@ -42,7 +42,7 @@ let k_aryTree = {
   },
 };
 
-console.log(fizzBuzz(k_aryTree));
+// console.log(fizzBuzz(k_aryTree));
 
 // newBinaryTree.root = new Node(
 //   2,
@@ -56,7 +56,35 @@ console.log(fizzBuzz(k_aryTree));
 //   new Node(15, new Node(14), new Node(18))
 // );
 
-// console.log(breadthFirst(newBinaryTree.root));
+let firstDir = new Node(
+  "folder",
+  new Node(
+    "folder",
+    new Node(".js"),
+    new Node("folder", new Node(".py"), new Node(".py"))
+  ),
+  new Node(
+    "folder",
+    null,
+    new Node("folder", new Node(".java"), new Node(".java"))
+  )
+);
+
+let secondDir = new Node(
+  "folder",
+  new Node("folder", new Node("folder", new Node(".cs"), new Node(".cs"))),
+  new Node(
+    "folder",
+    null,
+    new Node(
+      "folder",
+      new Node("sql"),
+      new Node("folder", new Node("css"), new Node("html"))
+    )
+  )
+);
+
+console.log(newBinaryTree.fileStructure(firstDir, secondDir));
 
 // newBinarySearchTree.add(19);
 // newBinarySearchTree.add(13);

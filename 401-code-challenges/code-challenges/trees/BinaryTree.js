@@ -7,6 +7,53 @@ class BinaryTree {
     this.root = root;
   }
 
+  fileStructure(firstDir, secondDir) {
+    let firstDirFiles = 0;
+    let secondDirFiles = 0;
+
+    if (!firstDir || !secondDir) return null;
+
+    if (firstDir) {
+      const _walk = (node) => {
+        if (node.value === "folder") {
+          // check left
+          if (node.leftChild) {
+            _walk(node.leftChild);
+          }
+          // check right
+          if (node.rightChild) {
+            _walk(node.rightChild);
+          }
+        } else {
+          firstDirFiles++;
+        }
+      };
+
+      _walk(firstDir);
+    }
+
+    if (secondDir) {
+      const _walk = (node) => {
+        if (node.value === "folder") {
+          // check left
+          if (node.leftChild) {
+            _walk(node.leftChild);
+          }
+          // check right
+          if (node.rightChild) {
+            _walk(node.rightChild);
+          }
+        } else {
+          secondDirFiles++;
+        }
+      };
+
+      _walk(secondDir);
+    }
+
+    return firstDirFiles === secondDirFiles;
+  }
+
   /* this function will traverse the whole tree and in each iteration will check
   if the current node value is bigger than the maximum value or not */
   maximumValue() {

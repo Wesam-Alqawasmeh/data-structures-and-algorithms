@@ -32,8 +32,8 @@
 
 - Challenge 21 - Insertion Sort
 - Challenge 22 - Merge Sort
-- Challnege 23 - Quick Sort
-- Challenge 24 - Implement Mergesort
+- Challenge 23 - Quick Sort
+- Challenge 24 - Implement Merge sort
 
 ---
 
@@ -48,4 +48,4 @@
 - Lab 30 - Implementation: Graphs
 - Challenge 31 - Implement breadth-first traversal on a graph
 - Challenge 32 - Is full trip is possible with direct flights, and how much it would cost
-- Challenge 33 - Conduct a depth first preorder traversal on a graph
+- Challenge 33 - Conduct a depth first pre order traversal on a graph

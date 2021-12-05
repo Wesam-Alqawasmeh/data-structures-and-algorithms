@@ -9,6 +9,41 @@ class BinarySearchTree extends BinaryTree {
     super(props);
   }
 
+  /**
+   *
+   * @param {the root of binary search tree} root
+   * @returns sum of odd numbers
+   */
+
+  sumOfOdd(root) {
+    if (!root) {
+      return "Binary tree is empty";
+    }
+
+    let sum = 0;
+
+    const _walk = (node) => {
+      // check if the value is odd add it to the sum
+      if (node.value % 2 != 0) {
+        sum = sum + node.value;
+      }
+      // check left
+      if (node.leftChild) {
+        _walk(node.leftChild);
+      }
+      // check right
+      if (node.rightChild) {
+        _walk(node.rightChild);
+      }
+    };
+
+    _walk(root);
+
+    return sum;
+  }
+
+  ////////////////////////////////////////////
+
   add(value) {
     let newNode = new Node(value);
     // checking if the tree is empty add the value to the root

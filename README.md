@@ -59,3 +59,5 @@ To run your tests
 17. [Code challenge 27](./401-code-challenges/cc_documentation/CC27-BLOG.md)
 
 18. [Code challenge 27](./401-code-challenges/cc_documentation/CC28-BLOG.md)
+
+19. [Code challenge 30](./401-code-challenges/cc_documentation/code-challenge30.md)

@@ -12,6 +12,36 @@ class LinkedList {
 
   /////////////////////////////////////////////////////////////////////////////////////////////
 
+  contains(key) {
+    if (!this.head) {
+      return null;
+    }
+
+    if (this.head.value[key]) {
+      return this.head.value;
+    }
+
+    let currentNode = this.head;
+
+    while (currentNode.next) {
+      if (currentNode.value[key]) {
+        return currentNode.value;
+      }
+      currentNode = currentNode.next;
+    }
+
+    // to check the last node
+    if (currentNode.value[key]) {
+      return currentNode.value;
+    }
+
+    return null;
+  }
+
+  /////////////////////////////////////////////////////////////////////////////////////////////
+
+  /////////////////////////////////////////////////////////////////////////////////////////////
+
   zipLists(a, b) {
     let aNode = a.head;
     let bNode = b.head;
@@ -19,22 +49,21 @@ class LinkedList {
     let currentNode = new Node(aNode.value);
     this.head = currentNode;
 
-
-    while((currentNode && bNode) || (currentNode && aNode)){
-      if(bNode){
+    while ((currentNode && bNode) || (currentNode && aNode)) {
+      if (bNode) {
         currentNode.next = new Node(bNode.value);
         currentNode = currentNode.next;
         bNode = bNode.next;
       }
-     
-      if(aNode){
+
+      if (aNode) {
         aNode = aNode.next;
-        if(aNode){
+        if (aNode) {
           currentNode.next = new Node(aNode.value);
           currentNode = currentNode.next;
         }
       }
-    };
+    }
     return this.head;
 
     // let aNodeArr = [];
@@ -55,14 +84,13 @@ class LinkedList {
     //     currentNode.next = new Node(bNodeArr[counter]);
     //     currentNode = currentNode.next;
     //   }
-      
+
     //   if(counter + 1 < aNodeArr.length){
     //     currentNode.next = new Node(aNodeArr[counter + 1]);
     //     currentNode = currentNode.next;
     //   }
     //   counter ++;
     // }
-    
   }
 
   /////////////////////////////////////////////////////////////////////////////////////////////
